@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doktor planszodziej</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Doktor planszodziej</h1>
+        </div>
+        <nav class="header-menu">
+            <a href="#" class="btn btn-add">Dodaj nową pozycję</a>
+            <a href="#" class="btn">Koszyk (2)</a>
+            <a href="#" class="btn btn-outline">Zaloguj / Wyloguj</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <aside class="filters">
+            <h2>Wyszukiwanie</h2>
+            
+            <div class="filter-group">
+                <label for="search">Szukaj gry:</label>
+                <input type="text" id="search" placeholder="Wpisz tytuł...">
+            </div>
+
+            <div class="filter-group">
+                <h3>Kategorie</h3>
+                <label><input type="checkbox"> Świetne</label>
+                <label><input type="checkbox"> Karciane</label>
+                <label><input type="checkbox"> Wolne</label>
+                <label><input type="checkbox"> Dziwne</label>
+            </div>
+
+            <div class="filter-group">
+                <h3>Liczba graczy</h3>
+                <label><input type="checkbox"> 1-2</label>
+                <label><input type="checkbox"> 3-4</label>
+                <label><input type="checkbox"> 5+</label>
+            </div>
+
+            <button class="btn btn-search">Filtruj</button>
+        </aside>
+
+        <section class="items-list">
+            <div class="item-card">
+                <div class="image-placeholder">Obrazek</div>
+                <h3>SmallWorld</h3>
+                <p class="category">Dziwne, Świetne</p>
+                <p class="price">150 zł</p>
+                <button class="btn btn-cart">Do koszyka</button>
+            </div>
+
+            <div class="item-card">
+                <div class="image-placeholder">Obrazek</div>
+                <h3>Magic The Gathering</h3>
+                <p class="category">Karciane</p>
+                <p class="price">180 zł</p>
+                <button class="btn btn-cart">Do koszyka</button>
+            </div>
+
+            <div class="item-card">
+                <div class="image-placeholder">Obrazek</div>
+                <h3>Talizman: magia i miecz</h3>
+                <p class="category">Wolne</p>
+                <p class="price">75 zł</p>
+                <button class="btn btn-cart">Do koszyka</button>
+            </div>
+
+            <div class="item-card">
+                <div class="image-placeholder">Obrazek</div>
+                <h3>Trolley problem</h3>
+                <p class="category">Świetne</p>
+                <p class="price">220 zł</p>
+                <button class="btn btn-cart">Do koszyka</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
