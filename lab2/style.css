@@ -1,0 +1,137 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px 40px;
+  background-color: #fafafa;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 16px;
+  color: #222;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+.center {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"], select {
+  padding: 5px 8px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+input[type="text"]:focus, select:focus {
+  outline: none;
+  border-color: #666;
+}
+
+button {
+  padding: 5px 12px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+#undo-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+#lists-container {
+  max-width: 450px;
+}
+
+.list-header {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #e8e8e8;
+  padding: 6px 10px;
+  margin-top: 12px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.list-header:hover {
+  background-color: #ddd;
+}
+
+.list-header .arrow {
+  font-size: 0.7em;
+}
+
+.task-item {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.task-item:hover {
+  background-color: #f5f5f5;
+}
+
+.task-item.done {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.task-item .done-date {
+  font-size: 0.8em;
+  color: #999;
+  margin-left: 8px;
+}
+
+.task-item .delete-btn {
+  margin-left: 8px;
+  cursor: pointer;
+  color: #c00;
+  background: none;
+  border: none;
+  font-weight: bold;
+  padding: 2px 6px;
+}
+
+.task-item .delete-btn:hover {
+  color: #900;
+}
+
+#modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-dialog {
+  background: white;
+  padding: 24px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modal-dialog p {
+  margin-bottom: 16px;
+}

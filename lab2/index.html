@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center">
+        <h1>Aplikacja do zrobienia</h1>
+
+        <div>
+            <input type="text" id="task-input" placeholder="Wpisz treść zadania...">
+            <select id="list-select"></select>
+            <button id="add-task-btn" type="button">Dodaj</button>
+        </div>
+
+        <div>
+            <input type="text" id="new-list-input" placeholder="Nazwa nowej listy...">
+            <button id="add-list-btn" type="button">Dodaj listę</button>
+        </div>
+
+        <div>
+            <input type="text" id="search-input" placeholder="Szukaj zadań...">
+            <label>
+                <input type="checkbox" id="case-sensitive-checkbox">
+                Rozróżniaj wielkość liter
+            </label>
+        </div>
+
+        <div>
+            <button id="undo-btn" type="button" disabled>Cofnij usunięcie</button>
+        </div>
+
+        <div id="lists-container"></div>
+
+        <div id="modal-overlay" style="display:none">
+            <div class="modal-dialog">
+                <p id="modal-text"></p>
+                <button id="modal-confirm-btn" type="button">Potwierdź</button>
+                <button id="modal-cancel-btn" type="button">Anuluj</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
